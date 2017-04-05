@@ -1,19 +1,19 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS.
-venue: "RNAseq analysis in R"        # brief name of host site without address (e.g., "Euphoric State University")
+venue: "R and Unix workshop - Brisbane"        # brief name of host site without address (e.g., "Euphoric State University")
 address: "TBA"      # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
 country: "au"      # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "-27.495431,153.012030"       # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
-humandate: "Jul 6-7, 2016"    # human-readable date (e.g., "Feb 17-18, 2020")
+humandate: "Jun 28-29, 2017"    # human-readable date (e.g., "Feb 17-18, 2020")
 humantime: "9:00 am - 5:00 pm"    # human-readable time (e.g., "9:00 am - 4:30 pm")
-startdate: 2017-07-06      # use YYYY-MM-DD format like 2015-01-01
-enddate: 2017-07-07        # use YYYY-MM-DD format like 2015-01-02
-instructor: ["Belinda Phipson", "Jovana Maksimovic", "Joseph Powell"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Paula Andrea Martinez"]
+startdate: 2017-06-28      # use YYYY-MM-DD format like 2015-01-01
+enddate: 2017-06-29        # use YYYY-MM-DD format like 2015-01-02
+instructor: ["Paula Andrea Martinez", "Michal Kotrbcik", "Leah Roberts"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["TBA"]
 contact: "combine@combine.org.au"      # contact email address for workshop organizer, such as "grace@hopper.org"
-etherpad: http://pad.software-carpentry.org/2017-07-07-RNAseq
+etherpad: http://pad.software-carpentry.org/2017-06-28-R-Brisbane
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
 ---
 
@@ -55,26 +55,6 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 </a>
 </p>
 
-<br>
-
-<p>
-<strong>Sponsors:</strong>
-</p>
-
-<p>
-<a href="http://www.agtagenomics.org.au/">
-    <img border="0" alt="AGTA" src="https://combineau.files.wordpress.com/2015/05/agta-logo.jpg" height="100">
-</a>
-
-&nbsp;
-&nbsp;
-
-<!--
-<a href="http://www.vlsci.org.au/">
-    <img border="0" alt="VLSCI" src="https://combineau.files.wordpress.com/2015/05/logo_vlsci_rgb.jpg" height="100">
-</a>
--->
-</p>
 
 <h2 id="general">General Information</h2>
 
@@ -85,14 +65,40 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   the pitch.
 -->
 <p>
-In this workshop, you will be learning how to analyse RNA-seq count data, using
-R. This will include reading the data into R, quality control and performing
-differential expression analysis and gene set testing, with a focus on the
-limma-voom analysis workflow. You will learn how to generate common plots for
-analysis and visualisation of gene expression data, such as boxplots and
-heatmaps. This workshop is aimed at biologists interested in learning how to
-perform differential expression analysis of RNA-seq data when reference genomes
-are available.
+  This hands-on workshop will cover basic concepts and tools,
+  including program design, version control, data management,
+  and task automation.
+  Participants will be encouraged to help one another
+  and to apply what they have learned to their own research problems.
+</p>
+<p align="center">
+  <em>
+    All the lessons in this workshop come from
+    <a href="{{site.swc_site}}">Software Carpentry</a>
+    For more information on what they teach and why,
+    please see their paper
+    "<a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745">Best Practices for Scientific Computing</a>".
+</em>
+</p>
+
+<p>
+  <a href="https://combine.org.au">COMBINE</a> is the national association
+  for Australian students studying bioinformatics and computational
+  biology, acting as the student sub-committee of the Australian
+  Bioinformatics and Computational Biology Society (ABACBS) and the
+  official International Society for Computational Biology (ISCB) Regional
+  Student Group (RSG) for Australia. We aim to bring together students from
+  the computational and life sciences through networking, collaboration and
+  professional development.
+</p>
+<p align="center">
+  <em>
+    To keep up to date with what COMBINE is doing join our
+    <a href="http://eepurl.com/4Qp0r">mailing list</a> or
+    follow us on <a
+       href="https://www.facebook.com/combine.australia">Facebook</a>
+    or <a href="https://twitter.com/combine_au">Twitter</a>.
+  </em>
 </p>
 
 <!--
@@ -103,14 +109,10 @@ are available.
 -->
 <p id="who">
   <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
-  <strong>Some basic R knowledge is assumed</strong>.
-  This is not an introduction to R course.
-  If you are not familiar with the R statistical programming language we
-  strongly encourage you to work through an introductory R course before you
-  attend this workshop. We recommend the Software Carpentry
-  <a href="http://swcarpentry.github.io/r-novice-gapminder/">R for Reproducible Scientific Analysis</a>
-  lessons up to and including vectorisation (topic 9).
+  The course is aimed at graduate students and other researchers, particlulrly
+  those intersted in bioinformatics and the computational life sciences.
+  <strong>You don't need to have any previous knowledge of the tools that will
+    be presented at the workshop.</strong>
 </p>
 
 <!--
@@ -141,9 +143,10 @@ are available.
   <strong>Requirements:</strong> Participants must bring a laptop with a
   Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges
   on. They should have a few specific software packages installed (listed
-  <a href="#setup">below</a>).
+  <a href="#setup">below</a>). They are also required to abide by
+  Software Carpentry's
+  <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
 </p>
-
 <!--
   CONTACT EMAIL ADDRESS
 
@@ -214,30 +217,29 @@ at 9am on the first day so we can help before the workshop starts.
   <div class="col-md-6">
     <h3>Day 1</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Installation and set up</td> </tr>
-      <tr> <td>09:30</td>  <td>Introduction to RNA-seq theory</td> </tr>
-      <tr> <td>10:15</td>  <td>R for RNAseq</tr>
-      <tr> <td>11:00</td>  <td><i>Break</i></td> </tr>
-      <tr> <td>11:30</td>  <td>Quality control and visualisation</tr>
-      <tr> <td>12:30</td>  <td><i>Lunch</i></td> </tr>
-      <tr> <td>13:30</td>  <td>Quality control and visualisation continued</td> </tr>
-      <tr> <td>15:00</td>  <td><i>Break</i></td> </tr>
-      <tr> <td>15:30</td>  <td>Quality control and visualisation continued</td> </tr>
-      <tr> <td>17:00</td>  <td><i>Wrap-up</i></td> </tr>
+      <tr> <td>09:00</td>  <td>Help setting up (optional)</td> </tr>
+      <tr> <td>09:30</td>  <td>Introduction to the UNIX shell</td> </tr>
+      <tr> <td>11:00</td>  <td>Morning tea break</td> </tr>
+      <tr> <td>11:30</td>  <td>Automating tasks with the UNIX shell</td> </tr>
+      <tr> <td>12:30</td>  <td>Lunch break</td> </tr>
+      <tr> <td>13:30</td>  <td>Introduction to R and RStudio</td> </tr>
+      <tr> <td>15:00</td>  <td>Afternoon tea break</td> </tr>
+      <tr> <td>15:30</td>  <td>Data structures in R</td> </tr>
+      <tr> <td>16:30</td>  <td>Wrap-up</td> </tr>
     </table>
   </div>
   <div class="col-md-6">
     <h3>Day 2</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Differential expression theory</td> </tr>
-      <tr> <td>09:45</td>  <td>Differential expression analysis</td> </tr>
-      <tr> <td>11:00</td>  <td><i>Break</i></td> </tr>
-      <tr> <td>11:30</td>  <td>Differential expression analysis continued</td> </tr>
-      <tr> <td>12:30</td>  <td><i>Lunch</i></td> </tr>
-      <tr> <td>13:30</td>  <td>Differential expression analysis continued</td> </tr>
-      <tr> <td>15:00</td>  <td><i>Break</i></td> </tr>
-      <tr> <td>15:30</td>  <td>Gene set testing</td> </tr>
-      <tr> <td>17:00</td>  <td><i>Wrap-up</i></td> </tr>
+      <tr> <td>09:00</td>  <td>Questions (optional)</td> </tr>
+      <tr> <td>09:30</td>  <td>Flow control and functions in R</td> </tr>
+      <tr> <td>11:00</td>  <td>Morning tea break</td> </tr>
+      <tr> <td>11:30</td>  <td>Data manipulation in R</td> </tr>
+      <tr> <td>12:30</td>  <td>Lunch break</td> </tr>
+      <tr> <td>13:30</td>  <td>Visualising data in R</td> </tr>
+      <tr> <td>15:00</td>  <td>Afternoon tea break</td> </tr>
+      <tr> <td>15:30</td>  <td>Reproducible research in R</td> </tr>
+      <tr> <td>16:30</td>  <td>Wrap-up</td> </tr>
     </table>
   </div>
 </div>
@@ -274,10 +276,34 @@ at 9am on the first day so we can help before the workshop starts.
 -->
 <h2 id="syllabus">Syllabus</h2>
 
-You can find all of the lesson notes for this workshop
-<a href="http://combine-australia.github.io/RNAseq-R/">here</a>.
-
-
+<div class="row">
+  <div class="col-md-4">
+    <h3 id="syllabus-shell">The Unix Shell</h3>
+    <ul>
+      <li>Files and directories</li>
+      <li>History and tab completion</li>
+      <li>Pipes and redirection</li>
+      <li>Looping over files</li>
+      <li>Creating and running shell scripts</li>
+      <li>Finding things</li>
+      <li><a href="{{site.swc_pages}}/shell-novice">Lesson materials...</a></li>
+      <li><a href="{{site.swc_pages}}/shell-novice/reference/">Reference...</a></li>
+    </ul>
+  </div>
+   <div class="col-md-4">
+    <h3 id="syllabus-r">R for reproducible analysis</h3>
+    <ul>
+      <li>Project and data management</li>
+      <li>Working with vectors and data frames</li>
+      <li>Manipulating data</li>
+      <li>Creating and using functions</li>
+      <li>Loops and conditionals</li>
+      <li>Publication-quality data visualisation</li>
+      <li><a href="{{site.swc_pages}}/r-novice-gapminder">Lesson materials...</a></li>
+      <li><a href="{{site.swc_pages}}/r-novice-gapminder/reference/">Reference...</a></li>
+    </ul>
+  </div>
+</div>
 <hr/>
 
 <!--
@@ -291,39 +317,172 @@ You can find all of the lesson notes for this workshop
   please preview your site before committing, and make sure to run
   'tools/check' as well.
 -->
-<h2 id="data">Data</h2>
-
-<p>
-  Please download these data files and save them to your laptop before the workshop:
-
-<ul>
-<li>Mouse mammary data (counts): <a href="https://figshare.com/s/1d788fd384d33e913a2a" class="uri">https://figshare.com/s/1d788fd384d33e913a2a</a></li>
-</ul>
-</p>
 
 <h2 id="setup">Setup</h2>
 
 <p>
-  To participate in this workshop, you will need
+  To participate in a this workshop, you will need
   access to the software described below. In addition, you will
   need an up-to-date web browser.
 </p>
-
 <p>
-Even if you already have R installed, it is important that you have the latest
-version because some of the packages we will be using will not work with earlier
-versions of R. The latest version (available through the links below) is 3.3.1.
-For Mac 10.6-10.8 the latest version is 3.2.1 (available from
-<a href = "https://cran.r-project.org/bin/macosx/">here</a>)
-and for that version you will also need to download this gfortran package
-<a href = "https://cran.r-project.org/bin/macosx/tools/gfortran-4.2.3.pkg">gfortran package</a>).
-</p>
-
-<p>
-  Software Carpentry maintains a list of common issues that occur during installation as a reference for instructors
+  Software Carpentry maintain a list of common issues that occur during installation as a reference for instructors
   that may be useful on the
-  <a href = "https://github.com/swcarpentry/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
+  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
+
+<div id="shell"> <!-- Start of 'shell' section. -->
+  <h3>The Bash Shell</h3>
+
+  <p>
+    Bash is a commonly-used shell that gives you the power to do simple
+    tasks more quickly.
+  </p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h4 id="shell-windows">Windows</h4>
+      <a href="https://www.youtube.com/watch?v=339AEqk9c-8">Video Tutorial</a>
+      <ol>
+        <li>Download the Git for Windows <a href="https://git-for-windows.github.io/">installer</a>.</li>
+        <li>Run the installer and follow the steps bellow:
+          <ol>
+            <!-- Git 2.8.2 Setup -->
+            <!-- Information -->
+            <li>Click on "Next".</li>
+            <!-- Select Components -->
+            <li>Click on "Next".</li>
+            <!-- Adjusting your PATH environment -->
+            <li>
+              <strong>
+                Keep "Use Git from the Windows Command Prompt" selected and click on "Next".
+              </strong>
+                If you forgot to do this programs that you need for the workshop will not work properly.
+                If this happens rerun the installer and select the appropriate option.
+            </li>
+            <!-- Choosing the SSH executable -->
+            <li>Click on "Next".</li>
+            <!-- Configuring the line ending conversions -->
+            <li>
+              <strong>
+                Keep "Checkout Windows-style, commit Unix-style line endings" selected and click on "Next".
+              </strong>
+            </li>
+            <!-- Configuring the terminal emulator to use with Git Bash -->
+            <li>
+              <strong>
+                Keep "Use Windows' default console window" selected and click on "Next".
+              </strong>
+            </li>
+            <!-- Configuring experimental performance tweaks -->
+            <li>Click on "Install".</li>
+            <!-- Installing -->
+            <!-- Completing the Git Setup Wizard -->
+            <li>Click on "Finish".</li>
+          </ol>
+        </li>
+        <li>
+          If your "HOME" environment variable is not set (or you don't know what this is):
+          <ol>
+            <li>Open command prompt (Open Start Menu then type <code>cmd</code> and press [Enter])</li>
+            <li>
+              Type the following line into the command prompt window exactly as shown:
+              <p><code>setx HOME "%USERPROFILE%"</code></p>
+            </li>
+            <li>Press [Enter], you should see <code>SUCCESS: Specified value was saved.</code></li>
+            <li>Quit command prompt by typing <code>exit</code> then pressing [Enter]</li>
+          </ol>
+        </li>
+      </ol>
+      <p>This will provide you with both Git and Bash in the Git Bash program.</p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="shell-macosx">Mac OS X</h4>
+      <p>
+        The default shell in all versions of Mac OS X is Bash, so no
+        need to install anything.  You access Bash from the Terminal
+        (found in
+        <code>/Applications/Utilities</code>).
+        See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
+        for an example on how to open the Terminal.
+        You may want to keep
+        Terminal in your dock for this workshop.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="shell-linux">Linux</h4>
+      <p>
+        The default shell is usually Bash, but if your
+        machine is set up differently you can run it by opening a
+        terminal and typing <code>bash</code>.  There is no need to
+        install anything.
+      </p>
+    </div>
+  </div>
+</div> <!-- End of 'shell' section. -->
+
+<div id="editor"> <!-- Start of 'editor' section. -->
+  <h3>Text Editor</h3>
+
+  <p>
+    When you're writing code, it's nice to have a text editor that is
+    optimized for writing code, with features like automatic
+    color-coding of key words.  The default text editor on Mac OS X and
+    Linux is usually set to Vim, which is not famous for being
+    intuitive.  if you accidentally find yourself stuck in it, try
+    typing the escape key, followed by <code>:q!</code> (colon, lower-case 'q',
+    exclamation mark), then hitting Return to return to the shell.
+  </p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h4 id="editor-windows">Windows</h4>
+      <a href="https://www.youtube.com/watch?v=339AEqk9c-8">Video Tutorial</a>
+      <p>
+        nano is a basic editor and the default that instructors use in the workshop.
+        To install it,
+        download the <a href="{{site.swc_installer}}">Software Carpentry Windows installer</a>
+        and double click on the file to run it.
+        <strong>This installer requires an active internet connection.</strong>
+      </p>
+      <p>
+        Others editors that you can use are
+        <a href="http://notepad-plus-plus.org/">Notepad++</a> or
+        <a href="http://www.sublimetext.com/">Sublime Text</a>.
+        <strong>Be aware that you must
+          add its installation directory to your system path.</strong>
+        Please ask your instructor to help you do this.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="editor-macosx">Mac OS X</h4>
+      <p>
+        nano is a basic editor and the default that instructors use in the workshop.
+        See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
+        for an example on how to open nano.
+        It should be pre-installed.
+      </p>
+      <p>
+        Others editors that you can use are
+        <a href="http://www.barebones.com/products/textwrangler/">Text Wrangler</a> or
+        <a href="http://www.sublimetext.com/">Sublime Text</a>.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="editor-linux">Linux</h4>
+      <p>
+        nano is a basic editor and the default that instructors use in the workshop.
+        It should be pre-installed.
+      </p>
+      <p>
+        Others editors that you can use are
+        <a href="https://wiki.gnome.org/Apps/Gedit">Gedit</a>,
+        <a href="http://kate-editor.org/">Kate</a> or
+        <a href="http://www.sublimetext.com/">Sublime Text</a>.
+      </p>
+    </div>
+  </div>
+</div> <!-- End of 'editor' section. -->
 
 <div id="r"> <!-- Start of 'R' section. -->
   <h3>R</h3>
@@ -343,10 +502,12 @@ and for that version you will also need to download this gfortran package
         Install R by downloading and running
         <a href="http://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
         from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-      </p>
-      <p>
         Also, please install the
         <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
+        Note that if you have separate user and admin accounts, you should run the
+        installers as administrator (right-click on .exe file and select "Run as
+        administrator" instead of double-clicking). Otherwise problems may occur later,
+        for example when installing R packages.
       </p>
     </div>
     <div class="col-md-4">
@@ -356,8 +517,6 @@ and for that version you will also need to download this gfortran package
         Install R by downloading and running
         <a href="http://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
         from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-      </p>
-      <p>
         Also, please install the
         <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
       </p>
@@ -369,59 +528,9 @@ and for that version you will also need to download this gfortran package
         from <a href="http://cran.r-project.org/index.html">CRAN</a>. Or
         you can use your package manager (e.g. for Debian/Ubuntu
         run <code>sudo apt-get install r-base</code> and for Fedora run
-        <code>sudo yum install R</code>).
-      </p>
-      <p>
-        Also, please install the
+        <code>sudo yum install R</code>).  Also, please install the
         <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
       </p>
     </div>
   </div>
-  <h4>R packages</h4>
-  <p>
-      You will also need to install the following R packages:
-      <strong>limma, edgeR, gplots, org.Mm.eg.db, org.Dm.eg.db, RColorBrewer, GO.db, BiasedUrn, DESeq2, Glimma</strong>.
-  </p>
-  <p>
-      If you are bringing your own data to analyse on Day 2, you should also install the annotation package for your species.
-      To find the name of the package you will need, look on the
-      <a href="http://bioconductor.org/packages/3.3/BiocViews.html#___AnnotationData">Bioconductor website</a>
-      (Search for "org." to see the organism packages).
-  </p>
-  <p>
-      These can all be obtained from <a href="https://www.bioconductor.org/">Bioconductor</a>.
-  </p>
-  <p>
-      Open RStudio and run the following commands to install packages from Bioconductor:
-  </p>
-  <p>
-      <code>> source("http://bioconductor.org/biocLite.R")</code>
-  </p>
-  <p>
-      <code>> biocLite("limma")</code>
-  </p>
-  <p>
-      Repeat this for each package.
-  </p>
-  <p>
-      <code>> biocLite("edgeR")</code>
-  </p>
-  <p>
-      <code>…</code>
-  </p>
-  <p>
-      <code>> biocLite("Glimma")</code>
-  </p>
-
-  <p>
-  Common problems:
-  <ul>
-    <li>If the source command doesn't work, try https instead of http.</li>
-    <li>Make sure you are directly connected to the internet and not using a proxy.</li>
-    <li>Make sure the package name is in quotes.</li>
-  </ul>
-  If you have any trouble please see the
-  <a href="https://www.bioconductor.org/install/">Instructions for installing Bioconductor packages</a>.
-  You can also arrive early on the first day of the workshop for help with set up.
-  </p>
 </div> <!-- End of 'R' section. -->
